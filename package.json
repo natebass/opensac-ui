@@ -1,0 +1,77 @@
+{
+  "name": "opensac-ui",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
+  },
+  "description": "Themed UI components for Open Sacramento and Open Fresno websites.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code4sac/opensac-ui.git"
+  },
+  "keywords": [
+    "react",
+    "opensac",
+    "ui",
+    "components",
+    "theme"
+  ],
+  "author": "Open Sacramento",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code4sac/opensac-ui/issues"
+  },
+  "homepage": "https://github.com/code4sac/opensac-ui#readme",
+  "dependencies": {
+    "@changesets/cli": "^2.27.11",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.3",
+    "@eslint/js": "^9.17.0",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-storybook": "^0.11.1",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "storybook": "^8.4.7",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.6",
+    "vitest": "^2.1.8"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types",
+    "plugin.d.ts",
+    "plugin.js",
+    "plugin-windicss.js"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
